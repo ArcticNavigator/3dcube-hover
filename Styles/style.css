@@ -1,0 +1,115 @@
+:root{
+    color: #f0ffff;
+    overflow: hidden;
+
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 1.4rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.83rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #f0ffff;
+}
+
+nav ul li a:hover{
+    transition: 0.5s;
+    color: #cdcdcd;
+}
+
+.onactive{
+    color: #7bacff;
+}
+
+.gitbutton{
+    background-color: #f0ffff;
+    border: none;
+    padding: 0.5rem;
+    font-size: 0.83rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+
+}
+
+.gitbutton:hover{
+    background-color: #fafafa;
+    border: none;
+}
+
+.gitbutton a{
+    text-decoration: none;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    text-align: left;
+    max-width: 40rem;
+    line-height: 90%;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    background-image: linear-gradient(45deg, #f0ffff, #9d9d9d, #ffffff );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: animate 2s ease-in-out infinite;
+}
+@keyframes animate{
+    from{
+        background-position: 0%;
+    }
+
+    to{
+        background-position: 200%;
+    }
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: larger;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    max-width: 50rem;
+}
+
+body{
+    padding: 2rem;
+    background-color: black;
+}
+
+h5{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.backgroundimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: scale(1.2);
+}
